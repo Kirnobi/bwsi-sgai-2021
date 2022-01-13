@@ -29,15 +29,8 @@ these, use pip as follows:
 
 ## Getting Started
 Step 0: Install python and the required packages by following the Prerequisites / Installation above.
-Step 1: Follow instructions on how to set up an SSH key between your computer and MIT github:
-[git help link](https://docs.github.com/en/enterprise-server@2.19/github/authenticating-to-github/connecting-to-github-with-ssh)
 
-Finally: Clone the repository via command prompt:
-```
-git clone git@github.mit.edu:BWSI-SGAI-2021/SGW_CW3.git
-cd SGW_CW3
-git status
-```
+Clone this repository.
 
 This will get all the repository files on your system. Python files in the main directory can be run to get
 an idea of how to use the game.
@@ -52,4 +45,8 @@ for the CLI options. It will show you the usage and options for the CLI.
 python RUN_Basic.Tests.py -h
 ```
 
-More details about the game and this software implementation will be provided over time via lectures.
+Running "RUN_Machine.py" shows the machine playing one round of the game.
+Running "RUN_Human.py" allows for human play. Starting the game allows you to move the "ambulance" using the Arrow Keys.
+Pressing Right/Left will "turn" the ambulance, without changing its position, while Up/Down will move the ambulance depending on its rotation
+The ambulance has a certain amount of "energy" that is required for it to move. This energy is drained upon movement or contact with the environmental hazard.
+
